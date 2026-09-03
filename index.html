@@ -160,6 +160,17 @@ ol.src{margin:0;padding-left:17px;display:flex;flex-direction:column;gap:5px}
 ol.src li{font-size:11.5px;color:var(--mut);line-height:1.5;max-width:88ch}
 .status{margin-top:14px;font-size:11.5px;color:var(--mut);font-family:"Space Mono",monospace;line-height:1.6}
 a{color:var(--peri)}
+
+/* button */
+.btn{display:inline-flex;align-items:center;gap:9px;
+  font-family:"Space Mono",ui-monospace,monospace;font-weight:700;font-size:11px;
+  letter-spacing:.08em;text-transform:uppercase;text-decoration:none;
+  background:var(--ink);color:var(--surf);border:1px solid var(--ink);border-radius:3px;
+  padding:11px 17px;line-height:1.2;
+  transition:background .15s ease,border-color .15s ease,color .15s ease}
+.btn:hover,.btn:focus-visible{background:var(--green);border-color:var(--green);color:#06231A}
+.btn .arw{font-size:14px;line-height:1}
+
 :focus-visible{outline:2px solid var(--peri);outline-offset:2px}
 @media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
 @media print{
@@ -198,15 +209,15 @@ a{color:var(--peri)}
     <div class="eb">The opportunity</div>
     <h2>A coalition with the demand signal, but no way to build the talent</h2>
   </div>
-  <p class="lede" style="margin-bottom:12px">Colorado Thrives, a coalition of CEOs from organizations across Colorado, set out to help its member organizations build lasting AI capability while creating a pathway into work for students in the state. They could identify the employers and they could find the students. What they could not do was design the training that connects the two.</p>
-  <p style="font-size:14px;color:var(--ink2)">CodePath had the pathway already running. In Summer 2026 the two organizations placed 13 students inside 9 Colorado host organizations to solve real business problems with AI, on a 10-week paid deployment with weekly mentorship.</p>
+  <p class="lede" style="margin-bottom:12px">Colorado Thrives, a coalition of CEOs from organizations across Colorado, set out to help its member organizations build lasting AI capability while creating a pathway into work for students in the state. With a motivated network of employers and the ability to identify local talent, they needed best-in-class AI-focused training that connected the two.</p>
+  <p style="font-size:14px;color:var(--ink2)">Given the headway CodePath has made building our Applied AI Engineering Pathway, including our partnership with Anthropic on Claude Corps, we were approached on a short timeline to support delivery of the inaugural Colorado Thrives program. In Summer 2026 the two organizations placed 13 students inside 9 Colorado host organizations to solve real business problems with AI, on a 10-week paid deployment with weekly mentorship.</p>
 </section>
 
 <!-- ============ MECHANICS ============ -->
 <section>
   <div class="sh">
     <div class="eb">How it ran</div>
-    <h2>Three organizations, three jobs, no overlap</h2>
+    <h2>Three organizations, three distinct roles</h2>
   </div>
   <div class="mech">
     <div class="mcol">
@@ -253,7 +264,7 @@ a{color:var(--peri)}
     <div class="dbox">
       <h3>Continued employment</h3>
       <div class="mini">
-        <div class="mrow"><span class="lab">Fellows with an offer, or told the organization wants them back</span><span class="val">55%</span></div>
+        <div class="mrow"><span class="lab">Fellows with a verbal or committed return offer</span><span class="val">55%</span></div>
         <div class="mrow"><span class="lab">Non-offers that were about fellow performance</span><span class="val">0</span></div>
       </div>
       <p style="font-size:13px">Every host organization that did not extend an offer cited budget, headcount, or the absence of a manager for the role to report to. None cited the quality of the fellow's work. Several fellows are still in active conversation with their organizations.<sup>³</sup></p>
@@ -325,6 +336,11 @@ a{color:var(--peri)}
 
   </div>
   <p style="font-size:12.5px;color:var(--mut);margin-top:11px">Fellow projects clustered into four business use cases: process automation and efficiency, data analysis and insights, knowledge management, and quality assurance. Every project from the cohort is documented on the public showcase.<sup>⁴</sup></p>
+  <p style="margin-top:14px">
+    <a class="btn" href="https://codepath.github.io/colorado-thrives-ai-fellows/">
+      See all 13 fellow projects <span class="arw" aria-hidden="true">&rarr;</span>
+    </a>
+  </p>
 </section>
 
 <!-- ============ DEMAND + MODEL ============ -->

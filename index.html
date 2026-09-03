@@ -1,0 +1,402 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Colorado Thrives AI Fellows</title>
+<meta name="description" content="How CodePath and Colorado Thrives placed 13 students inside 9 Colorado host organizations to solve real business problems with AI. Summer 2026 pilot outcomes, fellow projects, and employer demand.">
+
+<meta property="og:type" content="article">
+<meta property="og:title" content="Colorado Thrives AI Fellows">
+<meta property="og:description" content="How CodePath and Colorado Thrives placed 13 students inside 9 Colorado host organizations to solve real business problems with AI. Summer 2026 pilot outcomes, fellow projects, and employer demand.">
+<meta property="og:site_name" content="CodePath">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap">
+<style>
+/* --- baseline reset --- */
+html{color-scheme:light dark}
+body{margin:0}
+img{max-width:100%}
+[hidden]{display:none!important}
+</style>
+<style>
+:root{
+  --page:#F4F5FA; --surf:#FFFFFF; --surf2:#EDEFF7;
+  --ink:#1B1C57; --ink2:#43457A; --mut:#6E709A;
+  --rule:#DEE1EF; --rule2:#C3C7DC;
+  --green:#00C385; --gsoft:#DDF7EF;
+  --peri:#4F5DFF; --perisoft:#E5E7FF;
+  --mand:#C85400; --mandsoft:#FBEADD;
+  --sh:0 1px 2px rgba(27,28,87,.05), 0 10px 30px -22px rgba(27,28,87,.45);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --page:#0C0D1C; --surf:#15172E; --surf2:#1D1F3C;
+    --ink:#E9EAF6; --ink2:#C0C2DD; --mut:#9294B8;
+    --rule:#292B4C; --rule2:#3A3D66;
+    --green:#00C385; --gsoft:#0C3628;
+    --peri:#7B86FF; --perisoft:#212545;
+    --mand:#E8792B; --mandsoft:#37220F;
+    --sh:0 1px 2px rgba(0,0,0,.4), 0 10px 30px -22px rgba(0,0,0,.9);
+  }
+}
+:root[data-theme="dark"]{
+  --page:#0C0D1C; --surf:#15172E; --surf2:#1D1F3C;
+  --ink:#E9EAF6; --ink2:#C0C2DD; --mut:#9294B8;
+  --rule:#292B4C; --rule2:#3A3D66;
+  --green:#00C385; --gsoft:#0C3628;
+  --peri:#7B86FF; --perisoft:#212545;
+  --mand:#E8792B; --mandsoft:#37220F;
+  --sh:0 1px 2px rgba(0,0,0,.4), 0 10px 30px -22px rgba(0,0,0,.9);
+}
+
+*{box-sizing:border-box}
+body{margin:0;background:var(--page);color:var(--ink);
+  font-family:Poppins,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  font-weight:400;line-height:1.55;-webkit-font-smoothing:antialiased}
+.sheet{max-width:960px;margin:0 auto;background:var(--surf);border-left:1px solid var(--rule);border-right:1px solid var(--rule)}
+.pad{padding:0 46px}
+@media(max-width:640px){.pad{padding:0 22px}}
+
+.eb{font-family:"Space Mono",ui-monospace,monospace;font-weight:700;text-transform:uppercase;
+  letter-spacing:.13em;font-size:10.5px;color:var(--mut)}
+h1{margin:9px 0 0;font-size:clamp(26px,3.6vw,38px);line-height:1.12;font-weight:600;letter-spacing:-.022em;text-wrap:balance}
+h2{margin:0;font-size:clamp(17px,2.1vw,21px);line-height:1.25;font-weight:600;letter-spacing:-.012em}
+h3{margin:0;font-size:14.5px;font-weight:600;letter-spacing:-.005em}
+p{margin:0;max-width:70ch}
+.lede{font-size:16px;color:var(--ink2);font-weight:300;line-height:1.6;max-width:66ch}
+
+/* header */
+.hero{padding:38px 46px 30px;border-bottom:3px solid var(--ink)}
+@media(max-width:640px){.hero{padding:30px 22px 24px}}
+.brandline{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.mark{font-family:"Space Mono",monospace;font-weight:700;font-size:12px;letter-spacing:.06em;color:var(--ink)}
+.mark .star{color:var(--green)}
+.sep{width:1px;height:13px;background:var(--rule2)}
+.meta{display:grid;grid-template-columns:repeat(3,1fr);gap:7px;margin-top:16px}
+.chip{font-family:"Space Mono",monospace;font-size:10.5px;letter-spacing:.04em;line-height:1.35;
+  border:1px solid var(--rule2);border-radius:2px;padding:7px 9px;color:var(--ink2);
+  display:flex;align-items:center;justify-content:center;text-align:center}
+.chip.g{border-color:var(--green);background:var(--gsoft);color:var(--ink)}
+@media(max-width:420px){.chip{font-size:9.5px;padding:6px 6px;letter-spacing:.02em}}
+
+section{padding-top:34px}
+.sh{display:flex;flex-direction:column;gap:5px;margin-bottom:16px}
+.sh::after{content:"";width:34px;height:3px;background:var(--green);margin-top:9px}
+
+/* three-column mechanics */
+.mech{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--rule);
+  border:1px solid var(--rule);border-radius:3px;overflow:hidden}
+@media(max-width:760px){.mech{grid-template-columns:1fr}}
+.mcol{background:var(--surf);padding:17px 18px;display:flex;flex-direction:column;gap:9px}
+.mcol .who{font-family:"Space Mono",monospace;font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink);font-weight:700}
+.mcol ul{margin:0;padding-left:15px;display:flex;flex-direction:column;gap:6px}
+.mcol li{font-size:13px;color:var(--ink2);line-height:1.45}
+.mcol.cp{background:var(--surf2)}
+
+/* stat band */
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(148px,1fr));gap:1px;
+  background:var(--rule);border:1px solid var(--rule);border-radius:3px;overflow:hidden}
+.st{background:var(--surf);padding:17px 18px;display:flex;flex-direction:column;gap:5px}
+.st .v{font-size:31px;font-weight:600;line-height:1;letter-spacing:-.032em;font-variant-numeric:tabular-nums;color:var(--ink)}
+.st .v small{font-size:16px;color:var(--mut);font-weight:500}
+.st .k{font-size:11.5px;color:var(--mut);line-height:1.38}
+.st .src{font-family:"Space Mono",monospace;font-size:9.5px;color:var(--mut);letter-spacing:.03em;margin-top:2px}
+
+/* project cards */
+.projs{display:flex;flex-direction:column;gap:13px}
+.pj{border:1px solid var(--rule);border-radius:3px;background:var(--surf);
+  border-left:3px solid var(--peri);padding:17px 19px;display:flex;flex-direction:column;gap:9px;box-shadow:var(--sh)}
+.pjhead{display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap}
+.pjname{font-size:14.5px;font-weight:600}
+.pjname span{font-weight:400;color:var(--mut);font-size:13px}
+.pjtag{font-family:"Space Mono",monospace;font-size:10px;letter-spacing:.05em;padding:3px 8px;
+  border-radius:2px;background:var(--gsoft);color:var(--ink);white-space:nowrap}
+.pj dl{margin:0;display:grid;grid-template-columns:74px 1fr;gap:5px 12px}
+@media(max-width:560px){.pj dl{grid-template-columns:1fr;gap:2px}}
+.pj dt{font-family:"Space Mono",monospace;font-size:9.5px;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--mut);padding-top:3px}
+.pj dd{margin:0;font-size:13.5px;color:var(--ink2);line-height:1.5}
+.pj dd b{color:var(--ink);font-weight:600}
+
+/* demand block */
+.demand{display:grid;grid-template-columns:1.15fr 1fr;gap:16px}
+@media(max-width:760px){.demand{grid-template-columns:1fr}}
+.dbox{border:1px solid var(--rule);border-radius:3px;background:var(--surf);padding:17px 19px;
+  display:flex;flex-direction:column;gap:10px;box-shadow:var(--sh)}
+.dbox.accent{border-left:3px solid var(--mand)}
+.dbox p,.dbox li{font-size:13.5px;color:var(--ink2)}
+.dbox strong{color:var(--ink);font-weight:600}
+ul.cl{margin:0;padding-left:16px;display:flex;flex-direction:column;gap:6px}
+.mini{display:flex;flex-direction:column;gap:7px}
+.mrow{display:grid;grid-template-columns:1fr auto;gap:10px;align-items:baseline;
+  padding-bottom:6px;border-bottom:1px solid var(--rule)}
+.mrow:last-child{border-bottom:none;padding-bottom:0}
+.mrow .lab{font-size:13px;color:var(--ink2)}
+.mrow .val{font-family:"Space Mono",monospace;font-size:13px;font-weight:700;color:var(--ink);white-space:nowrap}
+
+/* model callout */
+.model{background:var(--surf2);border:1px solid var(--rule);border-left:3px solid var(--green);
+  border-radius:3px;padding:17px 20px;display:flex;flex-direction:column;gap:8px}
+.model p{font-size:14px;color:var(--ink2)}
+.model strong{color:var(--ink);font-weight:600}
+
+/* next */
+.next{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--rule);
+  border:1px solid var(--rule);border-radius:3px;overflow:hidden}
+@media(max-width:700px){.next{grid-template-columns:1fr}}
+.ncell{background:var(--surf);padding:16px 18px;display:flex;flex-direction:column;gap:6px}
+.ncell h3{font-size:13.5px}
+.ncell p{font-size:13px;color:var(--ink2)}
+
+/* footer */
+footer{margin-top:36px;border-top:1px solid var(--rule);background:var(--surf2);padding:22px 46px 30px}
+@media(max-width:640px){footer{padding:20px 22px 26px}}
+footer .eb{margin-bottom:9px;display:block}
+ol.src{margin:0;padding-left:17px;display:flex;flex-direction:column;gap:5px}
+ol.src li{font-size:11.5px;color:var(--mut);line-height:1.5;max-width:88ch}
+.status{margin-top:14px;font-size:11.5px;color:var(--mut);font-family:"Space Mono",monospace;line-height:1.6}
+a{color:var(--peri)}
+:focus-visible{outline:2px solid var(--peri);outline-offset:2px}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+@media print{
+  body{background:#fff}
+  .sheet{max-width:none;border:none}
+  .pj,.dbox,.st,.mcol{box-shadow:none}
+  section{break-inside:avoid}
+}
+</style>
+</head>
+<body>
+<div class="sheet">
+
+<div class="hero">
+  <div class="brandline">
+    <span class="mark">CODEPATH<span class="star">*</span>ORG</span>
+    <span class="sep"></span>
+    <span class="eb">Case study &middot; Summer 2026</span>
+  </div>
+  <h1>Colorado employers wanted AI capability. They got it by hiring students and training them on the job.</h1>
+  <div class="meta">
+    <span class="chip g">13 fellows</span>
+    <span class="chip g">9 host organizations</span>
+    <span class="chip g">Social, public and private sectors</span>
+    <span class="chip">10-week paid deployment</span>
+    <span class="chip">First-year through post-graduate</span>
+    <span class="chip">Rural and urban Colorado</span>
+  </div>
+</div>
+
+<div class="pad">
+
+<!-- ============ OPPORTUNITY ============ -->
+<section>
+  <div class="sh">
+    <div class="eb">The opportunity</div>
+    <h2>A coalition with the demand signal, but no way to build the talent</h2>
+  </div>
+  <p class="lede" style="margin-bottom:12px">Colorado Thrives, a coalition of CEOs from organizations across Colorado, set out to help its member organizations build lasting AI capability while creating a pathway into work for students in the state. They could identify the employers and they could find the students. What they could not do was design the training that connects the two.</p>
+  <p style="font-size:14px;color:var(--ink2)">CodePath had the pathway already running. In Summer 2026 the two organizations placed 13 students inside 9 Colorado host organizations to solve real business problems with AI, on a 10-week paid deployment with weekly mentorship.</p>
+</section>
+
+<!-- ============ MECHANICS ============ -->
+<section>
+  <div class="sh">
+    <div class="eb">How it ran</div>
+    <h2>Three organizations, three jobs, no overlap</h2>
+  </div>
+  <div class="mech">
+    <div class="mcol">
+      <span class="who">Colorado Thrives</span>
+      <ul>
+        <li>Recruited and selected fellows from Colorado colleges</li>
+        <li>Recruited host organizations and matched fellows to employers</li>
+        <li>Convened the state ecosystem and the funder conversation</li>
+      </ul>
+    </div>
+    <div class="mcol">
+      <span class="who">Host organizations</span>
+      <ul>
+        <li>Paid the fellowship roles directly</li>
+        <li>Supplied supervision and real project scope</li>
+        <li>Owned adoption of what the fellow built</li>
+      </ul>
+    </div>
+    <div class="mcol cp">
+      <span class="who">CodePath</span>
+      <ul>
+        <li>Program design, delivery management, and reporting</li>
+        <li>Co-delivered the in-person training with Anthropic, who built the AI curriculum</li>
+        <li>Weekly 1:1 mentorship across all 10 weeks</li>
+        <li>Project scoping support for fellows and supervisors</li>
+      </ul>
+    </div>
+  </div>
+  <p style="font-size:13px;color:var(--mut);margin-top:11px">Format: self-paced pre-work, two days of in-person training, then 10 weeks embedded in the host organization with project checkpoints and weekly 1:1s. CodePath takes ownership of the curriculum in future cohorts.</p>
+</section>
+
+<!-- ============ OUTCOMES ============ -->
+<section>
+  <div class="sh">
+    <div class="eb">Outcomes</div>
+    <h2>Every fellow finished. Every supervisor said the work met or beat expectations.</h2>
+  </div>
+  <div class="stats">
+    <div class="st"><span class="v">100<small>%</small></span><span class="k">Of fellows completed the 10-week deployment</span><span class="src">13 of 13 ¹</span></div>
+    <div class="st"><span class="v">100<small>%</small></span><span class="k">Of supervisors rated their fellow meeting or exceeding expectations</span><span class="src">11 of 11 surveyed ²</span></div>
+    <div class="st"><span class="v">91<small>%</small></span><span class="k">Said the project was very much aligned to business goals</span><span class="src">10 of 11 surveyed ²</span></div>
+  </div>
+  <div class="demand" style="margin-top:13px">
+    <div class="dbox">
+      <h3>Continued employment</h3>
+      <div class="mini">
+        <div class="mrow"><span class="lab">Fellows with an offer, or told the organization wants them back</span><span class="val">55%</span></div>
+        <div class="mrow"><span class="lab">Non-offers that were about fellow performance</span><span class="val">0</span></div>
+      </div>
+      <p style="font-size:13px">Every host organization that did not extend an offer cited budget, headcount, or the absence of a manager for the role to report to. None cited the quality of the fellow's work. Several fellows are still in active conversation with their organizations.<sup>³</sup></p>
+    </div>
+    <div class="dbox">
+      <h3>How fellows rated the experience</h3>
+      <div class="mini">
+        <div class="mrow"><span class="lab">Net Promoter Score</span><span class="val">+64</span></div>
+        <div class="mrow"><span class="lab">Detractors</span><span class="val">0</span></div>
+        <div class="mrow"><span class="lab">More confident entering the job market</span><span class="val">10 of 11 surveyed</span></div>
+      </div>
+      <p style="font-size:13px">The skills fellows name most are scoping an AI solution from scratch and presenting technical work to non-technical audiences.<sup>³</sup></p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROJECTS ============ -->
+<section>
+  <div class="sh">
+    <div class="eb">What fellows built</div>
+    <h2>Production systems their organizations are still running</h2>
+  </div>
+  <div class="projs">
+
+    <div class="pj">
+      <div class="pjhead">
+        <div class="pjname">BRAIN Bench <span>&middot; Emaliah Sawyer, Center for Rural AI</span></div>
+        <span class="pjtag">Offered a contract role</span>
+      </div>
+      <dl>
+        <dt>Problem</dt>
+        <dd>The Center for Rural AI was building BRAIN, a knowledge system that feeds curated rural context into large language models, on an untested assumption: that the added context produces better answers. No way existed to verify it, compare models against the organization's own data, or tell whether a new version was an improvement.</dd>
+        <dt>Built</dt>
+        <dd>An evaluation system that grades BRAIN's answers against real questions and a scoring rubric. She collected roughly <b>100 questions from colleagues across every role</b>, each paired with that colleague's own definition of a good answer, then built a four-dimension rubric and a harness that tests <b>three frontier models with and without BRAIN connected</b>, graded by an automated judge that staff validated against their own questions.</dd>
+        <dt>Result</dt>
+        <dd>Release decisions now rest on evidence instead of impression. The system also surfaces gaps in the knowledge base, so development effort goes where the weaknesses actually are, and the value case for BRAIN can be made with a model-by-model comparison rather than anecdotes.</dd>
+      </dl>
+    </div>
+
+    <div class="pj">
+      <div class="pjhead">
+        <div class="pjname">Avie <span>&middot; Yesenia Mendoza, AdvanceEDU</span></div>
+        <span class="pjtag">Offered a contract role</span>
+      </div>
+      <dl>
+        <dt>Problem</dt>
+        <dd>Success Coaches were spending <b>3 to 5 hours a week</b> walking students through the same repetitive financial aid steps, one student at a time. That time came directly out of the one-on-one coaching that changes whether a student stays enrolled.</dd>
+        <dt>Built</dt>
+        <dd>An always-on student support assistant that verifies a student's identity, pulls their school, degree program, and assigned coach, and guides them through financial aid, career exploration, and campus resources. It is deliberately built to ask guiding questions rather than supply answers. Every response is grounded in AdvanceEDU's own knowledge base, with explicit guardrails on sensitive topics and <b>automated evaluations run against dozens of simulated student conversations</b>.</dd>
+        <dt>Result</dt>
+        <dd>Coaching hours return to coaching. The system also detects crisis and high-risk language and is built to notify a Success Coach immediately, and students get a lower-stakes place to ask the questions they hesitate to bring to a person.</dd>
+      </dl>
+    </div>
+
+    <div class="pj">
+      <div class="pjhead">
+        <div class="pjname">Production pipeline <span>&middot; Yaseer Sabir, Colorado Thrives</span></div>
+        <span class="pjtag">Offered a contract role</span>
+      </div>
+      <dl>
+        <dt>Problem</dt>
+        <dd>A recurring production task was consuming <b>4 to 6 hours</b> of staff time each cycle.</dd>
+        <dt>Built</dt>
+        <dd>An agentic AI pipeline that runs the task end to end.</dd>
+        <dt>Result</dt>
+        <dd>Production time fell to <b>15 minutes</b>, a reduction of roughly 95%.</dd>
+      </dl>
+    </div>
+
+  </div>
+  <p style="font-size:12.5px;color:var(--mut);margin-top:11px">Fellow projects clustered into four business use cases: process automation and efficiency, data analysis and insights, knowledge management, and quality assurance. Every project from the cohort is documented on the public showcase.<sup>⁴</sup></p>
+</section>
+
+<!-- ============ DEMAND + MODEL ============ -->
+<section>
+  <div class="sh">
+    <div class="eb">Employer demand</div>
+    <h2>Every responding host organization would do it again</h2>
+  </div>
+  <div class="demand">
+    <div class="dbox accent">
+      <h3>Repeat demand from cohort one</h3>
+      <div class="mini">
+        <div class="mrow"><span class="lab">Would host a fellow in a future cohort</span><span class="val">6 of 6 surveyed</span></div>
+        <div class="mrow"><span class="lab">Said no</span><span class="val">0</span></div>
+        <div class="mrow"><span class="lab">Fellows they collectively want next cycle</span><span class="val">7</span></div>
+      </div>
+      <p>Three said yes outright, three said maybe. Asked which model they want, four named a full-time summer 2027 fellowship, two a part-time work-based learning model in spring 2027, and one was open to a year-long placement starting fall 2027. A first cohort producing this level of repeat demand is the signal worth acting on.<sup>³</sup></p>
+    </div>
+    <div class="dbox">
+      <h3>What hosts asked us to add</h3>
+      <p>Half the responding supervisors independently asked for the same thing: <strong>training on how to evaluate AI solutions</strong>. In the mid-program survey, only 2 of 11 supervisors said they could fully explain their fellow's project to someone else, while 10 of 11 were confident the work mattered.<sup>²</sup></p>
+      <p>Employers can identify the value of AI work well before they can assess it. Closing that gap is the difference between a fellow's project surviving their departure and quietly going unused.</p>
+    </div>
+  </div>
+  <div class="model" style="margin-top:14px">
+    <span class="eb">The economics</span>
+    <p><strong>Host organizations paid directly for the program and for their fellows' salaries.</strong> This was not a philanthropically subsidized placement. Employers put their own budget behind a student they had not met, working on a technology most of them were still learning, and 6 of 6 came out of it asking for more. The model carries its own revenue; philanthropy's role is to underwrite reach, not to keep the lights on.</p>
+  </div>
+</section>
+
+<!-- ============ WHAT'S NEXT ============ -->
+<section>
+  <div class="sh">
+    <div class="eb">What's next</div>
+    <h2>From 13 placements to a statewide talent strategy</h2>
+  </div>
+  <div class="next">
+    <div class="ncell">
+      <h3>Scale in Colorado</h3>
+      <p>Colorado Thrives is actively exploring growth of up to 10X as delivery capacity allows, and wants the program embedded in the statewide AI talent strategy rather than run as a standalone cohort.</p>
+    </div>
+    <div class="ncell">
+      <h3>A public-sector cohort</h3>
+      <p>Conversations with the Colorado state CIO opened the possibility of placing AI fellows inside state government as early as fall, potentially tied to benefits-sector work.</p>
+    </div>
+    <div class="ncell">
+      <h3>A Colorado Corps</h3>
+      <p>Colorado funders have signaled interest in catalytic support for a regional service corps modeled on the national Claude Corps program, aligned to the incoming governor's youth service agenda.</p>
+    </div>
+    <div class="ncell">
+      <h3>Peer states</h3>
+      <p>Colorado Thrives sits inside a national network of 30-plus comparable coalitions. The three-way structure here is portable to any state with an employer coalition willing to pay for placements.</p>
+    </div>
+  </div>
+  <div class="model" style="margin-top:14px;border-left-color:var(--peri)">
+    <span class="eb">What we would build with partnership</span>
+    <p>Three things this cohort proved are needed and none of the three parties currently funds: a <strong>supervisor curriculum on evaluating AI work</strong>, <strong>continued compute access for fellows after placement</strong>, since free-tier tools stall skill development, and <strong>a post-fellowship alumni network</strong> that keeps fellows connected to Colorado employers. Each is small, concrete, and directly traceable to what cohort one told us.</p>
+  </div>
+</section>
+
+</div>
+
+<footer>
+  <span class="eb">Sources</span>
+  <ol class="src">
+    <li>Program roster and completion records, Colorado Thrives AI Fellows contact list, Summer 2026. Cohort of 13 fellows across 9 host organizations: Ibotta, Center for Rural AI, Colorado Thrives, Colorado Office of Economic Development and International Trade, AdvanceEDU, Elemental Growth, Intrinsic, IMA Financial, and Vantage Data Centers.</li>
+    <li>Mid-program supervisor survey, July 2026. n=11 supervisor responses. The post-program supervisor survey (n=6) shows the same result on performance: 4 exceeded expectations, 2 met them.</li>
+    <li>AI Fellows post-program survey (n=11 of 13 fellows) and Supervisor after-program survey (n=6 complete responses), August 2026. Percentages are of respondents, not of the full cohort. Two fellows and several supervisors did not respond, so treat supervisor figures as directional.</li>
+    <li>Colorado Thrives AI Fellows public project showcase, <a href="https://codepath.github.io/colorado-thrives-ai-fellows/">codepath.github.io/colorado-thrives-ai-fellows</a>.</li>
+  </ol>
+</footer>
+
+</div>
+</body>
+</html>
